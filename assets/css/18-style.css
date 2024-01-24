@@ -1,0 +1,32 @@
+.cardMenu {
+   text-align: center;
+}
+
+.cardMenu .card .card-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0;
+}
+
+.cardMenu .card .card-footer >div{
+    border-right: 1.3px solid black;
+    flex: 1;
+    padding: 8px;
+}
+
+.cardMenu .card .card-footer >div:last-child{
+    border-right: none;
+}
+
+@media screen and (min-width:992px){
+
+    .cardMenu div[class^=col]:nth-child(2) .card{ /*daha detay tanımlama yaptık */
+        transform: scale(1.1) !important;
+        -webkit-transform: scale(1.1) !important;
+        -moz-transform: scale(1.1) !important;
+        -ms-transform: scale(1.1) !important;
+        -o-transform: scale(1.1) !important;
+}
+    
+}
